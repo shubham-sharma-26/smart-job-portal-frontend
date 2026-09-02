@@ -1,0 +1,257 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #f4f6fb;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  padding: 32px 0 0 0;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 0 18px 32px 18px;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.welcome-section {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #2d3a4a;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 14px;
+}
+
+.quick-action-btn {
+  background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(58, 123, 213, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.quick-action-btn:hover {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+  box-shadow: 0 4px 16px rgba(58, 123, 213, 0.13);
+}
+
+.dashboard-cards-row {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60, 72, 88, 0.10);
+  padding: 28px 24px;
+  flex: 1 1 220px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3a7bd5;
+  margin-bottom: 8px;
+}
+
+.card-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3a4a;
+}
+
+.resume-score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00b894;
+  margin-top: 8px;
+}
+
+.resume-score-label {
+  font-size: 1rem;
+  color: #6b7a90;
+}
+
+.dashboard-main {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  flex: 2;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.right-panel {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recommended-jobs {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60, 72, 88, 0.10);
+  padding: 24px 20px;
+}
+
+.recommended-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3a4a;
+  margin-bottom: 14px;
+}
+
+.recommended-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recommended-job {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #f4f8ff;
+  border: 1px solid #e0e6ed;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: box-shadow 0.2s;
+}
+.recommended-job:hover {
+  box-shadow: 0 2px 8px rgba(58, 123, 213, 0.10);
+  background: #eaf6ff;
+}
+
+.recommended-job-title {
+  font-weight: 600;
+  color: #3a7bd5;
+  font-size: 1.05rem;
+}
+
+.recommended-job-company {
+  color: #6b7a90;
+  font-size: 0.98rem;
+}
+
+.recommended-job-location {
+  color: #00b894;
+  font-size: 0.97rem;
+}
+
+.recent-applications {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60, 72, 88, 0.10);
+  padding: 24px 20px;
+}
+
+.recent-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3a4a;
+  margin-bottom: 14px;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.applications-table th, .applications-table td {
+  padding: 10px 8px;
+  text-align: left;
+}
+
+.applications-table th {
+  color: #3a7bd5;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e6ed;
+}
+
+.applications-table tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.applications-table td {
+  color: #2d3a4a;
+}
+
+.notifications-panel {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60, 72, 88, 0.10);
+  padding: 24px 20px;
+}
+
+.notifications-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3a4a;
+  margin-bottom: 10px;
+}
+
+.notifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification-item {
+  background: #f8fafc;
+  border-radius: 7px;
+  padding: 10px 12px;
+  color: #3a7bd5;
+  font-size: 0.98rem;
+  border-left: 4px solid #3a7bd5;
+}
+
+@media (max-width: 900px) {
+  .dashboard-main {
+    flex-direction: column;
+  }
+  .dashboard-cards-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
